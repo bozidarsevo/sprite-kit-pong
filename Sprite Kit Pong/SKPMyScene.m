@@ -48,6 +48,9 @@ static const uint32_t paddleCategory = 0x1 << 2;
 @property(nonatomic) NSInteger playerTwoScore;
 //timer for speed-up
 @property(nonatomic) NSTimer *speedupTimer;
+//sounds
+@property(nonatomic) SKAction *bounceSoundAction;
+@property(nonatomic) SKAction *failSoundAction;
 
 @end
 
@@ -142,6 +145,10 @@ static const uint32_t paddleCategory = 0x1 << 2;
         self.playerOneScore = 0;
         self.playerTwoScore = 0;
         [self updateScoreLabels];
+        
+        //sound actions
+        self.bounceSoundAction = [SKAction playSoundFileNamed:@"app_game_interactive_alert_tone_026.mp3" waitForCompletion:NO];
+        self.failSoundAction = [SKAction playSoundFileNamed:@"synth_stab.mp3" waitForCompletion:NO];
     }
     return self;
 }
@@ -342,16 +349,23 @@ static const uint32_t paddleCategory = 0x1 << 2;
         if (firstBody.node.position.x <= firstBody.node.frame.size.width)
         {
             [self pointForPlayer:2];
+            [self runAction:self.failSoundAction];
         }
         //ball touched right side
         else if(firstBody.node.position.x >= (self.size.width - firstBody.node.frame.size.width))
         {
             [self pointForPlayer:1];
+            [self runAction:self.failSoundAction];
+        }
+        else
+        {
+            [self runAction:self.bounceSoundAction];
         }
     }
     //check if we have ball & paddle contact
     else if (firstBody.categoryBitMask == ballCategory && secondBody.categoryBitMask == paddleCategory)
     {
+        [self runAction:self.bounceSoundAction];
         //you can react here if you want to customize the ball movement or direction
         NSLog(@"contact of ball and paddle");
     }

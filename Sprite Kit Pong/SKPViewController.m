@@ -17,8 +17,8 @@
 
     // Configure the view.
     SKView * skView = (SKView *)self.view;
-    skView.showsFPS = YES; //set to NO if you do not want to see frame rate on screen
-    skView.showsNodeCount = YES; // set to NO if you do not want to see node count on scren
+    skView.showsFPS = NO; //set to YES if you do want to see frame rate on screen
+    skView.showsNodeCount = NO; // set to YES if you do want to see node count on scren
     
     // Create and configure the scene.
     CGFloat w = skView.bounds.size.width;
