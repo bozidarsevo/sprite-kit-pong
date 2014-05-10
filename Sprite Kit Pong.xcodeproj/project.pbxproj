@@ -1,0 +1,502 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DAFBB94B191E220100670192 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAFBB94A191E220100670192 /* Foundation.framework */; };
+		DAFBB94D191E220100670192 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAFBB94C191E220100670192 /* CoreGraphics.framework */; };
+		DAFBB94F191E220100670192 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAFBB94E191E220100670192 /* UIKit.framework */; };
+		DAFBB951191E220100670192 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAFBB950191E220100670192 /* SpriteKit.framework */; };
+		DAFBB957191E220100670192 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DAFBB955191E220100670192 /* InfoPlist.strings */; };
+		DAFBB959191E220100670192 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFBB958191E220100670192 /* main.m */; };
+		DAFBB95D191E220100670192 /* SKPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFBB95C191E220100670192 /* SKPAppDelegate.m */; };
+		DAFBB960191E220100670192 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAFBB95E191E220100670192 /* Main_iPhone.storyboard */; };
+		DAFBB963191E220100670192 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAFBB961191E220100670192 /* Main_iPad.storyboard */; };
+		DAFBB966191E220100670192 /* SKPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFBB965191E220100670192 /* SKPViewController.m */; };
+		DAFBB969191E220100670192 /* SKPMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFBB968191E220100670192 /* SKPMyScene.m */; };
+		DAFBB96B191E220100670192 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = DAFBB96A191E220100670192 /* Spaceship.png */; };
+		DAFBB96D191E220100670192 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAFBB96C191E220100670192 /* Images.xcassets */; };
+		DAFBB974191E220100670192 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAFBB973191E220100670192 /* XCTest.framework */; };
+		DAFBB975191E220100670192 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAFBB94A191E220100670192 /* Foundation.framework */; };
+		DAFBB976191E220100670192 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAFBB94E191E220100670192 /* UIKit.framework */; };
+		DAFBB97E191E220100670192 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DAFBB97C191E220100670192 /* InfoPlist.strings */; };
+		DAFBB980191E220100670192 /* Sprite_Kit_PongTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFBB97F191E220100670192 /* Sprite_Kit_PongTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DAFBB977191E220100670192 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAFBB93F191E220100670192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAFBB946191E220100670192;
+			remoteInfo = "Sprite Kit Pong";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DAFBB947191E220100670192 /* Sprite Kit Pong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sprite Kit Pong.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAFBB94A191E220100670192 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DAFBB94C191E220100670192 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DAFBB94E191E220100670192 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DAFBB950191E220100670192 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		DAFBB954191E220100670192 /* Sprite Kit Pong-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Sprite Kit Pong-Info.plist"; sourceTree = "<group>"; };
+		DAFBB956191E220100670192 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DAFBB958191E220100670192 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DAFBB95A191E220100670192 /* Sprite Kit Pong-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sprite Kit Pong-Prefix.pch"; sourceTree = "<group>"; };
+		DAFBB95B191E220100670192 /* SKPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKPAppDelegate.h; sourceTree = "<group>"; };
+		DAFBB95C191E220100670192 /* SKPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKPAppDelegate.m; sourceTree = "<group>"; };
+		DAFBB95F191E220100670192 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		DAFBB962191E220100670192 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		DAFBB964191E220100670192 /* SKPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKPViewController.h; sourceTree = "<group>"; };
+		DAFBB965191E220100670192 /* SKPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKPViewController.m; sourceTree = "<group>"; };
+		DAFBB967191E220100670192 /* SKPMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKPMyScene.h; sourceTree = "<group>"; };
+		DAFBB968191E220100670192 /* SKPMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKPMyScene.m; sourceTree = "<group>"; };
+		DAFBB96A191E220100670192 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		DAFBB96C191E220100670192 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DAFBB972191E220100670192 /* Sprite Kit PongTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sprite Kit PongTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAFBB973191E220100670192 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		DAFBB97B191E220100670192 /* Sprite Kit PongTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Sprite Kit PongTests-Info.plist"; sourceTree = "<group>"; };
+		DAFBB97D191E220100670192 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DAFBB97F191E220100670192 /* Sprite_Kit_PongTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sprite_Kit_PongTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DAFBB944191E220100670192 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAFBB94D191E220100670192 /* CoreGraphics.framework in Frameworks */,
+				DAFBB94F191E220100670192 /* UIKit.framework in Frameworks */,
+				DAFBB951191E220100670192 /* SpriteKit.framework in Frameworks */,
+				DAFBB94B191E220100670192 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAFBB96F191E220100670192 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAFBB974191E220100670192 /* XCTest.framework in Frameworks */,
+				DAFBB976191E220100670192 /* UIKit.framework in Frameworks */,
+				DAFBB975191E220100670192 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DAFBB93E191E220100670192 = {
+			isa = PBXGroup;
+			children = (
+				DAFBB952191E220100670192 /* Sprite Kit Pong */,
+				DAFBB979191E220100670192 /* Sprite Kit PongTests */,
+				DAFBB949191E220100670192 /* Frameworks */,
+				DAFBB948191E220100670192 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DAFBB948191E220100670192 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAFBB947191E220100670192 /* Sprite Kit Pong.app */,
+				DAFBB972191E220100670192 /* Sprite Kit PongTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DAFBB949191E220100670192 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DAFBB94A191E220100670192 /* Foundation.framework */,
+				DAFBB94C191E220100670192 /* CoreGraphics.framework */,
+				DAFBB94E191E220100670192 /* UIKit.framework */,
+				DAFBB950191E220100670192 /* SpriteKit.framework */,
+				DAFBB973191E220100670192 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DAFBB952191E220100670192 /* Sprite Kit Pong */ = {
+			isa = PBXGroup;
+			children = (
+				DAFBB95B191E220100670192 /* SKPAppDelegate.h */,
+				DAFBB95C191E220100670192 /* SKPAppDelegate.m */,
+				DAFBB95E191E220100670192 /* Main_iPhone.storyboard */,
+				DAFBB961191E220100670192 /* Main_iPad.storyboard */,
+				DAFBB964191E220100670192 /* SKPViewController.h */,
+				DAFBB965191E220100670192 /* SKPViewController.m */,
+				DAFBB967191E220100670192 /* SKPMyScene.h */,
+				DAFBB968191E220100670192 /* SKPMyScene.m */,
+				DAFBB96A191E220100670192 /* Spaceship.png */,
+				DAFBB96C191E220100670192 /* Images.xcassets */,
+				DAFBB953191E220100670192 /* Supporting Files */,
+			);
+			path = "Sprite Kit Pong";
+			sourceTree = "<group>";
+		};
+		DAFBB953191E220100670192 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DAFBB954191E220100670192 /* Sprite Kit Pong-Info.plist */,
+				DAFBB955191E220100670192 /* InfoPlist.strings */,
+				DAFBB958191E220100670192 /* main.m */,
+				DAFBB95A191E220100670192 /* Sprite Kit Pong-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DAFBB979191E220100670192 /* Sprite Kit PongTests */ = {
+			isa = PBXGroup;
+			children = (
+				DAFBB97F191E220100670192 /* Sprite_Kit_PongTests.m */,
+				DAFBB97A191E220100670192 /* Supporting Files */,
+			);
+			path = "Sprite Kit PongTests";
+			sourceTree = "<group>";
+		};
+		DAFBB97A191E220100670192 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DAFBB97B191E220100670192 /* Sprite Kit PongTests-Info.plist */,
+				DAFBB97C191E220100670192 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DAFBB946191E220100670192 /* Sprite Kit Pong */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAFBB983191E220100670192 /* Build configuration list for PBXNativeTarget "Sprite Kit Pong" */;
+			buildPhases = (
+				DAFBB943191E220100670192 /* Sources */,
+				DAFBB944191E220100670192 /* Frameworks */,
+				DAFBB945191E220100670192 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Sprite Kit Pong";
+			productName = "Sprite Kit Pong";
+			productReference = DAFBB947191E220100670192 /* Sprite Kit Pong.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DAFBB971191E220100670192 /* Sprite Kit PongTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAFBB986191E220100670192 /* Build configuration list for PBXNativeTarget "Sprite Kit PongTests" */;
+			buildPhases = (
+				DAFBB96E191E220100670192 /* Sources */,
+				DAFBB96F191E220100670192 /* Frameworks */,
+				DAFBB970191E220100670192 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAFBB978191E220100670192 /* PBXTargetDependency */,
+			);
+			name = "Sprite Kit PongTests";
+			productName = "Sprite Kit PongTests";
+			productReference = DAFBB972191E220100670192 /* Sprite Kit PongTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DAFBB93F191E220100670192 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SKP;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Božidar Ševo";
+				TargetAttributes = {
+					DAFBB971191E220100670192 = {
+						TestTargetID = DAFBB946191E220100670192;
+					};
+				};
+			};
+			buildConfigurationList = DAFBB942191E220100670192 /* Build configuration list for PBXProject "Sprite Kit Pong" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DAFBB93E191E220100670192;
+			productRefGroup = DAFBB948191E220100670192 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DAFBB946191E220100670192 /* Sprite Kit Pong */,
+				DAFBB971191E220100670192 /* Sprite Kit PongTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DAFBB945191E220100670192 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAFBB96B191E220100670192 /* Spaceship.png in Resources */,
+				DAFBB96D191E220100670192 /* Images.xcassets in Resources */,
+				DAFBB963191E220100670192 /* Main_iPad.storyboard in Resources */,
+				DAFBB960191E220100670192 /* Main_iPhone.storyboard in Resources */,
+				DAFBB957191E220100670192 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAFBB970191E220100670192 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAFBB97E191E220100670192 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DAFBB943191E220100670192 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAFBB959191E220100670192 /* main.m in Sources */,
+				DAFBB969191E220100670192 /* SKPMyScene.m in Sources */,
+				DAFBB966191E220100670192 /* SKPViewController.m in Sources */,
+				DAFBB95D191E220100670192 /* SKPAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAFBB96E191E220100670192 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAFBB980191E220100670192 /* Sprite_Kit_PongTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DAFBB978191E220100670192 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAFBB946191E220100670192 /* Sprite Kit Pong */;
+			targetProxy = DAFBB977191E220100670192 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DAFBB955191E220100670192 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAFBB956191E220100670192 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DAFBB95E191E220100670192 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAFBB95F191E220100670192 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		DAFBB961191E220100670192 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAFBB962191E220100670192 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		DAFBB97C191E220100670192 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAFBB97D191E220100670192 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DAFBB981191E220100670192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DAFBB982191E220100670192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DAFBB984191E220100670192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sprite Kit Pong/Sprite Kit Pong-Prefix.pch";
+				INFOPLIST_FILE = "Sprite Kit Pong/Sprite Kit Pong-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DAFBB985191E220100670192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sprite Kit Pong/Sprite Kit Pong-Prefix.pch";
+				INFOPLIST_FILE = "Sprite Kit Pong/Sprite Kit Pong-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DAFBB987191E220100670192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Sprite Kit Pong.app/Sprite Kit Pong";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sprite Kit Pong/Sprite Kit Pong-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Sprite Kit PongTests/Sprite Kit PongTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		DAFBB988191E220100670192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Sprite Kit Pong.app/Sprite Kit Pong";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sprite Kit Pong/Sprite Kit Pong-Prefix.pch";
+				INFOPLIST_FILE = "Sprite Kit PongTests/Sprite Kit PongTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DAFBB942191E220100670192 /* Build configuration list for PBXProject "Sprite Kit Pong" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAFBB981191E220100670192 /* Debug */,
+				DAFBB982191E220100670192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAFBB983191E220100670192 /* Build configuration list for PBXNativeTarget "Sprite Kit Pong" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAFBB984191E220100670192 /* Debug */,
+				DAFBB985191E220100670192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DAFBB986191E220100670192 /* Build configuration list for PBXNativeTarget "Sprite Kit PongTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAFBB987191E220100670192 /* Debug */,
+				DAFBB988191E220100670192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DAFBB93F191E220100670192 /* Project object */;
+}
