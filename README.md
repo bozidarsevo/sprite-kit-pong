@@ -29,7 +29,7 @@ Here are two screenshots but you can also check out video :)
 
 ![screen1](https://raw.githubusercontent.com/bozidarsevo/sprite-kit-pong/master/screen1.png)
 
-![screen2](https://raw.githubusercontent.com/bozidarsevo/sprite-kit-pong/master/screen1.png)
+![screen2](https://raw.githubusercontent.com/bozidarsevo/sprite-kit-pong/master/screen2.png)
 
 ## Video
 
