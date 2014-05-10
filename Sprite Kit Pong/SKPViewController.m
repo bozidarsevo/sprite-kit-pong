@@ -17,11 +17,19 @@
 
     // Configure the view.
     SKView * skView = (SKView *)self.view;
-    skView.showsFPS = YES;
-    skView.showsNodeCount = YES;
+    skView.showsFPS = YES; //set to NO if you do not want to see frame rate on screen
+    skView.showsNodeCount = YES; // set to NO if you do not want to see node count on scren
     
     // Create and configure the scene.
-    SKScene * scene = [SKPMyScene sceneWithSize:skView.bounds.size];
+    CGFloat w = skView.bounds.size.width;
+    CGFloat h = skView.bounds.size.height;
+    CGSize sceneSize = CGSizeMake(w, h);
+    //to make sure that scene size is made for landscape mode :)
+    if (h > w) {
+        sceneSize = CGSizeMake(h, w);
+    }
+    
+    SKScene * scene = [SKPMyScene sceneWithSize:sceneSize];
     scene.scaleMode = SKSceneScaleModeAspectFill;
     
     // Present the scene.
@@ -40,6 +48,11 @@
     } else {
         return UIInterfaceOrientationMaskAll;
     }
+}
+
+-(BOOL)prefersStatusBarHidden
+{
+    return YES;
 }
 
 - (void)didReceiveMemoryWarning

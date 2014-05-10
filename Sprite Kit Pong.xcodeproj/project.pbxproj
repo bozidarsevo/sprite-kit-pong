@@ -18,7 +18,6 @@
 		DAFBB963191E220100670192 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAFBB961191E220100670192 /* Main_iPad.storyboard */; };
 		DAFBB966191E220100670192 /* SKPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFBB965191E220100670192 /* SKPViewController.m */; };
 		DAFBB969191E220100670192 /* SKPMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFBB968191E220100670192 /* SKPMyScene.m */; };
-		DAFBB96B191E220100670192 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = DAFBB96A191E220100670192 /* Spaceship.png */; };
 		DAFBB96D191E220100670192 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAFBB96C191E220100670192 /* Images.xcassets */; };
 		DAFBB974191E220100670192 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAFBB973191E220100670192 /* XCTest.framework */; };
 		DAFBB975191E220100670192 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAFBB94A191E220100670192 /* Foundation.framework */; };
@@ -55,7 +54,6 @@
 		DAFBB965191E220100670192 /* SKPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKPViewController.m; sourceTree = "<group>"; };
 		DAFBB967191E220100670192 /* SKPMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKPMyScene.h; sourceTree = "<group>"; };
 		DAFBB968191E220100670192 /* SKPMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKPMyScene.m; sourceTree = "<group>"; };
-		DAFBB96A191E220100670192 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 		DAFBB96C191E220100670192 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DAFBB972191E220100670192 /* Sprite Kit PongTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sprite Kit PongTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAFBB973191E220100670192 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -131,7 +129,6 @@
 				DAFBB965191E220100670192 /* SKPViewController.m */,
 				DAFBB967191E220100670192 /* SKPMyScene.h */,
 				DAFBB968191E220100670192 /* SKPMyScene.m */,
-				DAFBB96A191E220100670192 /* Spaceship.png */,
 				DAFBB96C191E220100670192 /* Images.xcassets */,
 				DAFBB953191E220100670192 /* Supporting Files */,
 			);
@@ -244,7 +241,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAFBB96B191E220100670192 /* Spaceship.png in Resources */,
 				DAFBB96D191E220100670192 /* Images.xcassets in Resources */,
 				DAFBB963191E220100670192 /* Main_iPad.storyboard in Resources */,
 				DAFBB960191E220100670192 /* Main_iPhone.storyboard in Resources */,
@@ -487,6 +483,7 @@
 				DAFBB985191E220100670192 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DAFBB986191E220100670192 /* Build configuration list for PBXNativeTarget "Sprite Kit PongTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +492,7 @@
 				DAFBB988191E220100670192 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
