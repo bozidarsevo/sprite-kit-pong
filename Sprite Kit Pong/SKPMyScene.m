@@ -69,7 +69,7 @@ static const uint32_t paddleCategory = 0x1 << 2;
         //setup physics body for scene
         [self setPhysicsBody:[SKPhysicsBody bodyWithEdgeLoopFromRect:self.frame]];
         self.physicsBody.categoryBitMask = cornerCategory;
-        NSLog(@"category %d",self.physicsBody.categoryBitMask);
+//        NSLog(@"category %d",self.physicsBody.categoryBitMask);
         self.physicsBody.dynamic = NO;
         self.physicsBody.friction = 0.0;
         self.physicsBody.restitution = 1.0;
@@ -367,6 +367,9 @@ static const uint32_t paddleCategory = 0x1 << 2;
     {
         [self runAction:self.bounceSoundAction];
         //you can react here if you want to customize the ball movement or direction
+        //in original pong direction of the ball after it hits the paddle depends on
+        //what part of the paddle does it hit
+        //so you can customize it as you want
         NSLog(@"contact of ball and paddle");
     }
 }
@@ -425,7 +428,7 @@ static const uint32_t paddleCategory = 0x1 << 2;
 }
 -(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    NSLog(@"ended %d",touches.count);
+//    NSLog(@"ended %d",touches.count);
     for (UITouch *touch in touches) {
         if (touch == self.playerOnePaddleControlTouch)
         {
