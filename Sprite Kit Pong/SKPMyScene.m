@@ -10,7 +10,7 @@
 
 #define kPaddleWidth 20.0 //width of the paddles
 #define kPaddleHeight 80.0 //height of the paddles
-#define kBallRadius 20.0 //radius of the moving ball
+#define kBallRadius 15.0 //radius of the moving ball
 #define kStartingVelocityX 150.0 //starting velocity x value for moving the ball
 #define kStartingVelocityY -150.0 //starting velocity y value for moving the ball
 #define kVelocityMultFactor 1.05 //multiply factor for speeding up the ball after some time
@@ -371,6 +371,25 @@ static const uint32_t paddleCategory = 0x1 << 2;
         //what part of the paddle does it hit
         //so you can customize it as you want
         NSLog(@"contact of ball and paddle");
+        SKSpriteNode *paddleNode = (SKSpriteNode*)secondBody.node;
+        CGPoint ballPosition = self.ballNode.position;
+        CGFloat firstThird = (paddleNode.position.y - paddleNode.size.height / 2.0) + paddleNode.size.height * (1.0/3.0);
+        CGFloat secondThird = (paddleNode.position.y - paddleNode.size.height / 2.0) + paddleNode.size.height * (2.0/3.0);
+        CGFloat dx = self.ballNode.physicsBody.velocity.dx;
+        CGFloat dy = self.ballNode.physicsBody.velocity.dy;
+        //        NSLog(@"velocity poslije %f %f",dx,dy);
+        if (ballPosition.y < firstThird) {
+            //ball hits the left part
+            if (dy > 0) {
+                self.ballNode.physicsBody.velocity = CGVectorMake(dx, -dy);
+            }
+        }
+        else if (ballPosition.y > secondThird) {
+            //ball hits the left part
+            if (dy < 0) {
+                self.ballNode.physicsBody.velocity = CGVectorMake(dx, -dy);
+            }
+        }
     }
 }
 
